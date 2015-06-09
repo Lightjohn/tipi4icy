@@ -2,4 +2,5 @@ plugins.mitiv.conv
 plugins.mitiv.deconv
 plugins.mitiv.io
 plugins.mitiv.microscopy
+plugins.mitiv.myEzPlug
 plugins.mitiv.reconstruction
