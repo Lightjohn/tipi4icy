@@ -181,17 +181,24 @@ extends EzPlug</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../plugins/mitiv/deconv/MitivBlindDeconvolution.html#sequenceClosed(Sequence)">sequenceClosed</a></strong>(Sequence&nbsp;sequence)</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../plugins/mitiv/deconv/MitivBlindDeconvolution.html#launchDeconvolution(DoubleArray, DoubleArray, DoubleArray, boolean)">launchDeconvolution</a></strong>(DoubleArray&nbsp;imgArray,
+                   DoubleArray&nbsp;psfArray,
+                   DoubleArray&nbsp;weight,
+                   boolean&nbsp;cleanPrevResult)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../plugins/mitiv/deconv/MitivBlindDeconvolution.html#sequenceOpened(Sequence)">sequenceOpened</a></strong>(Sequence&nbsp;sequence)</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../plugins/mitiv/deconv/MitivBlindDeconvolution.html#sequenceClosed(Sequence)">sequenceClosed</a></strong>(Sequence&nbsp;sequence)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../plugins/mitiv/deconv/MitivBlindDeconvolution.html#stopExecution()">stopExecution</a></strong>()</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../plugins/mitiv/deconv/MitivBlindDeconvolution.html#sequenceOpened(Sequence)">sequenceOpened</a></strong>(Sequence&nbsp;sequence)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../plugins/mitiv/deconv/MitivBlindDeconvolution.html#stopExecution()">stopExecution</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><strong><a href="../../../plugins/mitiv/deconv/MitivBlindDeconvolution.html#updateOutputPad()">updateOutputPad</a></strong>()</code>&nbsp;</td>
 </tr>
@@ -270,6 +277,18 @@ extends EzPlug</pre>
 <pre>public&nbsp;void&nbsp;launchDeconvolution(DoubleArray&nbsp;imgArray,
                        DoubleArray&nbsp;psfArray,
                        DoubleArray&nbsp;weight)</pre>
+</li>
+</ul>
+<a name="launchDeconvolution(DoubleArray, DoubleArray, DoubleArray, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>launchDeconvolution</h4>
+<pre>public&nbsp;void&nbsp;launchDeconvolution(DoubleArray&nbsp;imgArray,
+                       DoubleArray&nbsp;psfArray,
+                       DoubleArray&nbsp;weight,
+                       boolean&nbsp;cleanPrevResult)</pre>
 </li>
 </ul>
 <a name="execute()">
