@@ -2,7 +2,13 @@ language: java
 jdk:
 - openjdk6
 before_install:
-- wget http://mitiv.univ-lyon1.fr/${PROJECT}.zip && unzip ${PROJECT}.zip && rm ${PROJECT}.zip
+- wget http://www.icy.bioimageanalysis.org/downloadIcy/icy.zip && unzip icy.zip -d icy && rm icy.zip
+- mkdir lib
+- mv mv icy/icy.jar lib/
+- mv icy/lib/bioformats.jar lib/
+- mv icy/plugins/adufour/blocks/Blocks.jar lib/
+- mv icy/plugins/adufour/ezplug/EzPlug.jar lib/
+- mv icy/plugins/adufour/protocols/Protocols.jar lib/
 script:
 - ant build
 - ant doc > /dev/null
